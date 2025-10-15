@@ -24,9 +24,6 @@ const UserProfile = () => {
         about: authUser?.user?.about || '',
     });
 
-    useEffect(() => {
-        console.log("Auth User updated:", authUser);  // Log to see if authUser updates
-    }, [authUser]);
 
     const handleEditing = () => {
         setIsEditing(!isEditing);
